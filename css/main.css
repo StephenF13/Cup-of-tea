@@ -1,0 +1,402 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+
+    font-size: 1.6rem;
+    background-color: #f2f2f2;
+    color: grey;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flexslider, .christmas-offer, .teas-general, .teasbg {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*réparer le flux*/
+.repairFlux {
+    clear: both;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    padding: 0;
+    margin: 0;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+}
+
+/* img responsive */
+
+.imgResponsive {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* titles */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amaranth', sans-serif;
+    font-weight: normal;
+}
+
+.teasbg, section.teas-general {
+    background-color: white;
+    padding: 20px 0;
+}
+
+/* header */
+
+header {
+    background: url("../img/bg.jpg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.ribbon {
+    display: none;
+    z-index: 3;
+}
+
+.offer {
+    background-color: #879E0F;
+    opacity: 0.7;
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+    padding: 5px 0;
+}
+
+header nav {
+    padding: 0 20px;
+}
+
+header nav a {
+    display: block;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+header nav a:not(.logo-link):hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.basket {
+    position: fixed;
+    left: 0;
+    top: 40px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    z-index: 2000;
+}
+
+.basket i {
+    border-radius: 50%;
+    padding: 8px;
+    /*line-height: 1.5;*/
+    /* utiliser flex ou line height (en forcant une hauteur)*/
+    border: 1px grey solid;
+}
+
+.flexslider {
+    display: none;
+    margin-bottom: 70px;
+}
+
+/* section tea */
+.teas-general {
+    padding: 20px 15px;
+}
+
+h2 {
+    font-weight: normal;
+    color: #98b209;
+    text-align: center;
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    left: 0;
+    right: 0;
+    height: 1px;
+    position: absolute;
+    top: calc(50% - 1px);
+    background: #E5DCD3;
+}
+
+h2 span {
+    display: inline-block;
+    padding: 0 10px;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+.teas-presentation  {
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.teas-general:hover img:not(:hover) {
+    opacity: 0.5;
+    -webkit-transition: opacity 1s ease 0s;
+    -moz-transition: opacity 1s ease 0s;
+    -ms-transition: opacity 1s ease 0s;
+    -o-transition: opacity 1s ease 0s;
+    transition: opacity 1s ease 0s;
+}
+
+.teas-presentation figure {
+    text-align: center;
+    display: inline-block;
+    float: left;
+    width: 48%;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.teas-presentation figure:last-of-type {
+    width: 100%;
+    text-align: center;
+}
+
+.separate {
+    height: 25px;
+    background-color: #F1F1F1;
+}
+
+/* teas product */
+
+.teas-product {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+.teas-product a.see-more {
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    background-color: #B09067;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.teas-product a.see-more:hover {
+    opacity: 0.75;
+}
+
+/* footer */
+
+footer {
+    background: url("../img/bg.jpg") no-repeat bottom center;
+    background-size: cover;
+}
+
+.footer-details {
+    background-color: #879E0F;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 20px;
+
+}
+
+.footer-details a {
+    color: #CDD69E;
+    float: left;
+    width: 50%;
+    margin: 10px 0;
+    text-transform: uppercase;
+
+}
+
+.footer-details i {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 2.3rem;
+}
+
+.footer-details a:last-of-type {
+    width: 100%;
+}
+
+footer nav {
+    text-align: center;
+    background-color: #96B011;
+    padding: 30px;
+    opacity: 0.85;
+}
+
+footer nav h5 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+}
+
+footer nav a {
+    display: block;
+    margin: 7px 0;
+    color: #CDD69E;
+    font-size: 1.3rem;
+}
+
+.footer-small {
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.footer-small img {
+    margin-top: 10px;
+}
+
+@media all and (min-width: 750px) {
+
+    .ribbon {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75px;
+    }
+
+    .basket {
+        display: inline;
+        position: absolute;
+        top: 80px;
+        right: 35%;
+        left: 65%;
+        width: 300px;
+        border: none;
+        background-color: transparent;
+        font-size: 1.8rem;
+    }
+
+    .basket::before {
+        content: 'Mon panier';
+        margin-right: 10px;
+    }
+
+    .logo {
+        text-align: left;
+        margin-left: 7%;
+    }
+
+    .offer {
+        margin-bottom: 0;
+    }
+
+    header nav a {
+        display: inline-block;
+        margin: 20px 30px;
+    }
+
+    .christmas-offer {
+        display: block;
+
+    }
+
+    .flexslider {
+        display: block;
+    }
+
+    .separate:first-of-type {
+        display: none;
+    }
+
+    .footer-details {
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 20px;
+
+    }
+
+    .footer-details a {
+        color: #CDD69E;
+        float: none;
+        display: inline-block;
+        width: auto;
+        margin: 10px 2%;
+    }
+
+    .footer-details i {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 2.3rem;
+    }
+
+    .footer-details a:last-of-type {
+        width: auto;
+    }
+
+    .links-footer {
+        float: left;
+        width: 33%;
+    }
+
+}
+
+@media all and (min-width: 1000px) {
+    .ribbon {
+        width: 150px;
+    }
+
+    .teas-presentation figure {
+        text-align: center;
+        display: inline-block;
+        float: none;
+        width: 18%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .teas-presentation figure:last-of-type {
+        width: auto;
+
+    }
+
+    .teas-product {
+        display: inline-block;
+        width: 32%;
+    }
+
+    .links-footer {
+        padding: 0 140px;
+    }
+
+    section.teas-general {
+        padding: 20px 20px;
+    }
+
+}
+
+/* TODO ameliorer les redites entre fichiers css et mutualiser le code */

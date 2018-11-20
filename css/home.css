@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.christmas-offer {
+    display: none;
+}
+
+.christmas-offer h1 {
+    text-align: center;
+    font-weight: normal;
+    color: #98b209;
+    font-size: 4.5rem;
+}
+
+.flexslider {
+    display: none;
+    margin-bottom: 70px;
+}

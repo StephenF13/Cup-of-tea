@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+header {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: left;
+}
+
+h2 + p {
+    text-align: left;
+}
+
+.teasbg {
+    margin-bottom: 20px;
+}
+
+.tea-img {
+    display: none;
+}
+
+@media all and (min-width: 1000px) {
+    .tea-img {
+        display: inline-block;
+        float: left;
+        z-index: 1000;
+        position: relative;
+    }
+
+}
